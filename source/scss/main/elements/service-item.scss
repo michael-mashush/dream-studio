@@ -1,0 +1,37 @@
+.service-item {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+
+    &__number {
+    	line-height: 1.2;
+    	font-weight: 400;
+    	font-size: 150px;
+    	color: rgba(var(--color-01));
+
+    	@media screen and (max-width: 1770px) {
+    		font-size: calc(120px + 30 * (100vw - 600px) / (1770 - 600));
+    	}
+
+    	@media screen and (max-width: 600px) {
+    		font-size: calc(80px + 70 * (100vw - 320px) / (600 - 320));
+    	}
+    }
+
+    &__title {
+    	text-transform: uppercase;
+    	line-height: 1.8;
+    	font-weight: 400;
+    	font-size: 15px;
+    	color: rgba(var(--color-01));
+
+    	@media screen and (max-width: 1770px) {
+    		font-size: calc(13px + 2 * (100vw - 1024px) / (1770 - 1024));
+    	}
+
+    	@media screen and (max-width: 1024px) {
+    		font-size: 13px;
+    	}
+    }
+}

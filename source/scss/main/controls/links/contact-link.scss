@@ -1,0 +1,11 @@
+.contact-link {
+    line-height: 1.8;
+    font-weight: 400;
+    font-size: 15px;
+    color: rgba(var(--color-04));
+    transition: color 0.2s;
+
+    &:focus-visible, &:hover {
+    	color: rgba(var(--color-01));
+    }
+}

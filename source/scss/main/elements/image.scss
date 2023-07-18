@@ -1,0 +1,38 @@
+.image {
+  position: relative;
+  overflow: hidden;
+
+  // изображение имеет свободный размер
+  &--free &__object {
+  	position: relative;
+  	z-index: 2;
+  }
+
+  // изображение подстраивается под родителя
+  &--fixed &__object {
+  	position: absolute;
+  	top: 0;
+  	left: 0;
+  	z-index: 2;
+  	height: 100%;
+  	width: 100%;
+  }
+
+  &--contain &__object {
+  	object-fit: contain;
+  }
+
+  &--cover &__object {
+  	object-fit: cover;
+  }
+
+  &__loader {
+  	position: absolute;
+  	top: 50%;
+  	left: 50%;
+  	z-index: 1;
+  	height: 50px;
+  	width: 50px;
+  	transform: translate(-50%, -50%);
+  }
+}

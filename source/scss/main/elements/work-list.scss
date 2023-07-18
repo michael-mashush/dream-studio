@@ -1,0 +1,19 @@
+.work-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 100px 20px;
+
+    @media screen and (max-width: 1350px) {
+    	row-gap: calc(50px + 50 * (100vw - 1024px) / (1350 - 1024));
+    }
+
+    @media screen and (max-width: 1024px) {
+    	grid-template-columns: repeat(2, 1fr);
+    	gap: 50px 0;
+    }
+
+    @media screen and (max-width: 600px) {
+    	grid-template-columns: 1fr;
+    	gap: calc(30px + 10 * (100vw - 320px) / (600 - 320));
+    }
+}

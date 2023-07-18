@@ -1,0 +1,24 @@
+.navigation-list {
+    display: flex;
+    align-items: center;
+
+    @media screen and (max-width: 1024px) {
+    	align-items: flex-start;
+    	flex-direction: column;
+    }
+
+    &__item {
+    	&:not(:last-child) {
+    		margin-right: 75px;
+
+    		@media screen and (max-width: 1770px) {
+    			margin-right: calc(30px + 45 * (100vw - 1024px) / (1770 - 1024));
+    		}
+
+    		@media screen and (max-width: 1024px) {
+    			margin-right: 0;
+    			margin-bottom: 20px;
+    		}
+    	}
+    }
+}

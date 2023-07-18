@@ -1,0 +1,19 @@
+.intro-projects {
+    position: relative;
+
+    &__images-slider {
+    	margin-bottom: 50px;
+
+    	@media screen and (max-width: 1770px) {
+    		margin-bottom: calc(30px + 20 * (100vw - 1024px) / (1770 - 1024));
+    	}
+
+    	@media screen and (max-width: 1024px) {
+    		margin-bottom: calc(25px + 10 * (100vw - 320px) / (1024 - 320));
+    	}
+
+    	@media screen and (max-width: 320px) {
+    		margin-bottom: 25px;
+    	}
+    }
+}

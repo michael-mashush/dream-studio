@@ -1,0 +1,12 @@
+.subscribe-form {
+    display: grid;
+    gap: 15px;
+
+    &__element {
+    	display: flex;
+    }
+
+    &__input, &__button {
+    	width: 100%;
+    }
+}

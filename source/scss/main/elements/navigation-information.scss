@@ -1,0 +1,7 @@
+.navigation-information {
+    gap: 30px;
+
+    @media screen and (max-width: 600px) {
+    	gap: 30px !important;
+    }
+}

@@ -1,0 +1,25 @@
+.background-link-element {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: rgba(var(--color-08), 0.85);
+    transition: opacity 0.2s;
+    opacity: 0;
+
+    &__icon {
+    	height: 30px;
+    	width: 30px;
+
+    	@media screen and (max-width: 1770px) {
+    		height: calc(20px + 10 * (100vw - 320px) / (1770 - 320));
+    		width: calc(20px + 10 * (100vw - 320px) / (1770 - 320));
+    	}
+    }
+}

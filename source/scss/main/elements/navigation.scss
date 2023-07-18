@@ -1,0 +1,42 @@
+.navigation {
+    display: flex;
+
+    @media screen and (max-width: 1024px) {
+    	position: fixed;
+    	top: calc(var(--header-mobile-height) + 1px);
+    	right: 0;
+    	bottom: 0;
+    	left: 0;
+    	background-color: rgba(var(--color-08));
+    	transition: opacity 0.2s;
+    	pointer-events: none;
+    	opacity: 0;
+    }
+
+    &--active {
+    	@media screen and (max-width: 1024px) {
+    		pointer-events: all;
+    		opacity: 1;
+    	}
+    }
+
+    &__body {
+    	display: flex;
+    	flex-direction: column;
+    	width: 100%;
+
+    	@media screen and (max-width: 1024px) {
+    		overflow: auto;
+    		padding: 30px 20px;
+    	}
+    }
+
+    &__information-wrapper {
+    	display: none;
+    	margin-top: 30px;
+
+    	@media screen and (max-width: 1024px) {
+    		display: block;
+    	}
+    }
+}

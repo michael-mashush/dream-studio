@@ -1,0 +1,13 @@
+.services-description-column {
+    &__image-wrapper {
+    	margin-bottom: 40px;
+
+    	@media screen and (max-width: 1770px) {
+    		margin-bottom: calc(20px + 20 * (100vw - 320px) / (1770 - 320));
+    	}
+    }
+
+    &__image {
+    	padding-top: 40%;
+    }
+}

@@ -1,0 +1,39 @@
+.burger-button {
+    position: relative;
+    height: 26px;
+    width: 26px;
+    background-color: transparent;
+
+    &__line {
+    	position: absolute;
+    	right: 0;
+    	height: 2px;
+    	background-color: rgba(var(--color-01));
+    	transition: all 0.2s;
+
+    	&:nth-child(1) {
+    		top: calc(50% - 5px);
+    		left: 0;
+
+    		.burger-button.burger-button--active & {
+    			transform: rotate(45deg);
+    		}
+    	}
+
+    	&:nth-child(2) {
+    		top: calc(50% + 3px);
+    		left: 25%;
+
+    		.burger-button.burger-button--active & {
+    			transform: rotate(-45deg);
+    		}
+    	}
+
+    	&:nth-child(n) {
+    		.burger-button.burger-button--active & {
+    			top: calc(50% - 1px);
+    			left: 0;
+    		}
+    	}
+    }
+}

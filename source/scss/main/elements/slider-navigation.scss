@@ -1,0 +1,37 @@
+.slider-navigation {
+    position: relative;
+    display: flex;
+    align-items: center;
+
+    &__element {
+    	&:not(:last-child) {
+    		margin-right: 80px;
+
+    		@media screen and (max-width: 1770px) {
+    			margin-right: calc(40px + 40 * (100vw - 320px) / (1770 - 320));
+    		}
+
+    		@media screen and (max-width: 320px) {
+    			margin-right: 40px;
+    		}
+    	}
+    }
+
+    &::before {
+    	position: absolute;
+    	top: 50%;
+    	left: 50%;
+    	text-transform: uppercase;
+    	letter-spacing: 0.1em;
+    	line-height: 1.2;
+    	font-weight: 400;
+    	font-size: 15px;
+    	color: rgba(var(--color-01));
+    	transform: translate(-50%, -50%);
+    	content: '|';
+
+    	@media screen and (max-width: 1770px) {
+    		font-size: calc(12px + 3 * (100vw - 320px) / (1770 - 320));
+    	}
+    }
+}

@@ -1,0 +1,17 @@
+.background-text {
+    position: absolute;
+    text-transform: uppercase;
+    line-height: 1.8;
+    font-weight: 400;
+    font-size: 240px;
+    color: transparent;
+    -webkit-text-stroke: 1px rgba(var(--color-03));
+
+    @media screen and (max-width: 1770px) {
+    	font-size: calc(60px + 180 * (100vw - 320px) / (1770 - 320));
+    }
+
+    @media screen and (max-width: 1024px) {
+    	display: none;
+    }
+}

@@ -1,0 +1,23 @@
+.category-list {
+    gap: 60px 0;
+
+    @media screen and (max-width: 1770px) {
+    	row-gap: calc(40px + 20 * (100vw - 1024px) / (1770 - 1024));
+    }
+
+    @media screen and (max-width: 1024px) {
+    	row-gap: 40px;
+    }
+
+    @media screen and (max-width: 600px) {
+    	row-gap: 40px;
+    }
+
+    &__item {
+    	grid-column: span 2;
+
+    	@media screen and (max-width: 1024px) {
+    		grid-column: span 1;
+    	}
+    }
+}

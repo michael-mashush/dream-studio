@@ -1,0 +1,9 @@
+.footer-section {
+    padding: 90px 0;
+    border-top: 1px solid rgba(var(--color-06));
+
+    @media screen and (max-width: 1770px) {
+    	padding-top: calc(45px + 45 * (100vw - 320px) / (1770 - 320));
+    	padding-bottom: calc(45px + 45 * (100vw - 320px) / (1770 - 320));
+    }
+}

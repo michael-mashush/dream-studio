@@ -1,0 +1,17 @@
+.slider-navigation-button {
+    background-color: transparent;
+
+    & span {
+    	text-transform: uppercase;
+    	letter-spacing: 0.1em;
+    	line-height: 1.0;
+    	font-weight: 400;
+    	font-size: 15px;
+    	color: rgba(var(--color-01));
+    	transition: color 0.2s;
+    }
+
+    &:disabled span {
+    	color: rgba(var(--color-05));
+    }
+}

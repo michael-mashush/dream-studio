@@ -1,0 +1,30 @@
+.grid-container-element {
+    display: flex;
+    flex-direction: column;
+    margin: 0 30px;
+
+    &--centered {
+    	justify-content: center;
+    	align-items: center;
+    	text-align: center;
+
+    	@media screen and (max-width: 600px) {
+    		justify-content: flex-start;
+    		align-items: flex-start;
+    		text-align: left;
+    	}
+    }
+
+    @media screen and (max-width: 1770px) {
+    	margin-right: calc(20px + 10 * (100vw - 1024px) / (1770 - 1024));
+    	margin-left: calc(20px + 10 * (100vw - 1024px) / (1770 - 1024));
+    }
+
+    @media screen and (max-width: 1024px) {
+    	margin: 0 20px;
+    }
+
+    @media screen and (max-width: 600px) {
+    	margin: 0;
+    }
+}

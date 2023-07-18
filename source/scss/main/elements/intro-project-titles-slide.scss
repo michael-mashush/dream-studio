@@ -1,0 +1,35 @@
+.intro-project-titles-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    text-align: center;
+    color: rgba(var(--color-01));
+
+    @media screen and (max-width: 1024px) {
+    	justify-content: flex-start;
+    	text-align: left;
+    }
+
+    &__title {
+    	overflow: hidden;
+    	text-transform: uppercase;
+    	text-overflow: ellipsis;
+    	white-space: nowrap;
+    	letter-spacing: 0.1em;
+    	line-height: 1.5;
+    	font-weight: 400;
+    	font-size: 15px;
+    	color: rgba(var(--color-01));
+
+    	.intro-project-titles-slide:focus-visible &, .intro-project-titles-slide:hover & {
+    		text-decoration: underline;
+    	}
+
+    	@media screen and (max-width: 1024px) {
+    		overflow: initial;
+    		text-overflow: initial;
+    		white-space: normal;
+    	}
+    }
+}

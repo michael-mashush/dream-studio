@@ -1,0 +1,21 @@
+.intro-project-images-slide {
+    position: relative;
+
+    &__image {
+    	padding-top: 40%;
+
+    	@media screen and (max-width: 600px) {
+    		padding-top: 50%;
+    	}
+
+    	@media screen and (max-width: 425px) {
+    		padding-top: 60%;
+    	}
+    }
+
+    &__background-link-element {
+    	.intro-project-images-slide:focus-visible &, .intro-project-images-slide:hover & {
+    		opacity: 1;
+    	}
+    }
+}

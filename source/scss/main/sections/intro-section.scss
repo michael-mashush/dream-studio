@@ -1,0 +1,15 @@
+.intro-section {
+    margin: var(--header-source-height) 0 170px;
+
+    @media screen and (max-width: 1770px) {
+    	margin-bottom: calc(100px + 70 * (100vw - 320px) / (1770 - 320));
+    }
+
+    @media screen and (max-width: 1770px) {
+    	margin-top: calc(var(--header-mobile-height) + 60 * (100vw - 1024px) / (1770 - 1024));
+    }
+
+    @media screen and (max-width: 1024px) {
+    	margin-top: calc(var(--header-mobile-height) + 30px + 30 * (100vw - 320px) / (1024 - 320));
+    }
+}

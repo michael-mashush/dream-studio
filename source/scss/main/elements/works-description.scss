@@ -1,0 +1,11 @@
+.works-description {
+    &__item {
+    	&:nth-child(2) {
+    		grid-column: span 2;
+
+    		@media screen and (max-width: 1024px) {
+    			grid-column: span 1;
+    		}
+    	}
+    }
+}

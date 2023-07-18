@@ -1,0 +1,209 @@
+/*
+    [==================================================]
+        Initial styles
+    [==================================================]
+*/
+
+@import './init/reset.scss';
+
+@import './init/fonts.scss';
+
+@import './init/const.scss';
+
+/*
+    [==================================================]
+        Libraries
+    [==================================================]
+*/
+
+@import './libs/aos.scss';
+
+@import './libs/swiper.scss';
+
+@import './libs/swiper-fade-effect.scss';
+
+/*
+    [==================================================]
+        Typography
+    [==================================================]
+*/
+
+@import './main/typography/heading.scss';
+
+@import './main/typography/paragraph.scss';
+
+/*
+    [==================================================]
+        Sections
+    [==================================================]
+*/
+
+@import './main/sections/default-section.scss';
+
+@import './main/sections/header-section.scss';
+
+@import './main/sections/intro-section.scss';
+
+@import './main/sections/about-section.scss';
+
+@import './main/sections/services-section.scss';
+
+@import './main/sections/categories-section.scss';
+
+@import './main/sections/reviews-section.scss';
+
+@import './main/sections/works-section.scss';
+
+@import './main/sections/subscribe-section.scss';
+
+@import './main/sections/footer-section.scss';
+
+/*
+    [==================================================]
+        Elemenets
+    [==================================================]
+*/
+
+@import './main/elements/wrapper.scss';
+
+@import './main/elements/container.scss';
+
+@import './main/elements/image.scss';
+
+@import './main/elements/background-text.scss';
+
+@import './main/elements/background-link-element.scss';
+
+// decorative-grid
+
+@import './main/elements/decorative-grid.scss';
+
+// slider
+
+@import './main/elements/slider-navigation.scss';
+
+@import './main/elements/slider-pagination.scss';
+
+// header
+
+@import './main/elements/navigation.scss';
+
+@import './main/elements/navigation-list.scss';
+
+@import './main/elements/navigation-information.scss';
+
+@import './main/elements/navigation-information-column.scss';
+
+// intro
+
+@import './main/elements/intro-projects.scss';
+
+@import './main/elements/intro-project-images-slider.scss';
+
+@import './main/elements/intro-project-titles-slider.scss';
+
+@import './main/elements/intro-project-images-slide.scss';
+
+@import './main/elements/intro-project-titles-slide.scss';
+
+@import './main/elements/intro-control-panel.scss';
+
+// grid
+
+@import './main/elements/grid-container.scss';
+
+@import './main/elements/grid-container-element.scss';
+
+// about
+
+@import './main/elements/about-description.scss';
+
+@import './main/elements/about-description-column.scss';
+
+// services
+
+@import './main/elements/services-description.scss';
+
+@import './main/elements/services-description-column.scss';
+
+@import './main/elements/service-list.scss';
+
+@import './main/elements/service-item.scss';
+
+// categories
+
+@import './main/elements/category-list.scss';
+
+@import './main/elements/category-item.scss';
+
+// reviews
+
+@import './main/elements/reviews.scss';
+
+@import './main/elements/reviews-slider.scss';
+
+@import './main/elements/review.scss';
+
+// works
+
+@import './main/elements/works.scss';
+
+@import './main/elements/works-description.scss';
+
+@import './main/elements/works-description-column.scss';
+
+@import './main/elements/work-list.scss';
+
+@import './main/elements/work-item.scss';
+
+// subscribe
+
+@import './main/elements/subscribe.scss';
+
+@import './main/elements/subscribe-content.scss';
+
+@import './main/elements/subscribe-form.scss';
+
+// footer
+
+@import './main/elements/footer-information.scss';
+
+@import './main/elements/footer-information-column.scss';
+
+@import './main/elements/main-information.scss';
+
+@import './main/elements/main-information-column.scss';
+
+@import './main/elements/support-information.scss';
+
+@import './main/elements/social-media.scss';
+
+/*
+    [==================================================]
+        Controls
+    [==================================================]
+*/
+
+@import './main/controls/buttons/slider-navigation-button.scss';
+
+@import './main/controls/buttons/slider-pagination-button.scss';
+
+@import './main/controls/buttons/default-button.scss';
+
+@import './main/controls/buttons/burger-button.scss';
+
+@import './main/controls/inputs/default-input.scss';
+
+@import './main/controls/links/information-link.scss';
+
+@import './main/controls/links/navigation-link.scss';
+
+@import './main/controls/links/contact-link.scss';
+
+@import './main/controls/links/paragraph-link.scss';
+
+@import './main/controls/links/support-link.scss';
+
+@import './main/controls/links/social-media-link.scss';
+
+@import './main/controls/links/logotype-link.scss';

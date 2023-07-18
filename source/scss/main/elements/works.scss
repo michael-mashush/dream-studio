@@ -1,0 +1,20 @@
+.works {
+    &__description {
+    	margin-bottom: 50px;
+
+    	@media screen and (max-width: 1770px) {
+    		margin-bottom: calc(30px + 20 * (100vw - 320px) / (1770 - 320));
+    	}
+    }
+
+    &__show-more {
+    	display: flex;
+    	justify-content: center;
+    	align-items: center;
+    	margin-top: 100px;
+
+    	@media screen and (max-width: 1770px) {
+    		margin-top: calc(50px + 50 * (100vw - 320px) / (1770 - 320));
+    	}
+    }
+}

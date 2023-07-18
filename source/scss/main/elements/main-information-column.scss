@@ -1,0 +1,15 @@
+.main-information-column {
+    display: flex;
+    flex-direction: column;
+
+    &__list {
+    	display: flex;
+    	flex-direction: column;
+    }
+
+    &__item {
+    	&:not(:last-child) {
+    		margin-bottom: 15px;
+    	}
+    }
+}

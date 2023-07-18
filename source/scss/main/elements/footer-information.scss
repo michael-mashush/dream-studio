@@ -1,0 +1,25 @@
+.footer-information {
+    @media screen and (max-width: 1024px) {
+    	row-gap: calc(30px + 20 * (100vw - 600px) / (1024 - 600));
+    }
+
+    @media screen and (max-width: 600px) {
+    	row-gap: calc(30px + 10 * (100vw - 320px) / (600 - 320));
+    }
+
+    &__column {
+    	&:nth-child(2) {
+    		align-items: center;
+    		grid-column: span 2;
+
+    		@media screen and (max-width: 1024px) {
+    			order: -1;
+    		}
+
+    		@media screen and (max-width: 600px) {
+    			align-items: flex-start;
+    			grid-column: span 1;
+    		}
+    	}
+    }
+}
